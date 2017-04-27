@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<link href="homepage.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+<div id="Part1">我们的地球</div>
+<div class="Part_Line"></div>
+<div id="Part2">
+<div class="Part2_1" onclick="window.location.reload()">首页</div>
+<div class="Part2_1" onclick="window.open('#')">数据库</div>
+<div class="Part2_1" onclick="window.open('map.html')">地图</div>
+<div class="Part2_1" onclick="window.open('news.html')">新闻资讯</div>
+<div class="Part2_1" onclick="window.open('#')">制作团队</div>
+</div>
+<div class="Part_Line"></div>
+
+<div id="Part3">
+<div id="Part3_1">
+<!--文字-->
+<div id="Part3_1_1">
+<p>地球是太阳系八大行星之一，按离太阳由近及远的次序排为第三颗，也是太阳系中直径、质量和密度最大的类地行星，距离太阳1.5亿公里。
+地球自西向东自转，同时围绕太阳公转。现有40~46亿岁，它有一个天然卫星——月球，二者组成一个天体系统——地月系统。46亿年以前起源于原始太阳星云。<br/>
+&nbsp&nbsp地球赤道半径6378.137千米，极半径6356.752千米，平均半径约6371千米，赤道周长大约为40076千米，呈两极略扁赤道略鼓的不规则的椭圆球体。
+地球表面积5.1亿平方公里，其中71%为海洋，29%为陆地，在太空上看地球呈蓝色。地球内部有核、幔、壳结构，地球外部有水圈、大气圈以及磁场。
+地球是目前宇宙中已知存在生命的唯一的天体，是包括人类在内上百万种生物的家园。</p>
+</div>
+<!--旋转的地球的背景-->
+<div id="Part3_1_2">
+<!--旋转的地球-->
+<div id="content">
+            <!--<div id="mask"></div>-->
+            <div id="box">
+                <img class="img1" alt="" src="http://images.cnblogs.com/cnblogs_com/kuikui/354173/r_earth.jpg" />
+                <img class="img2" alt="" src="http://images.cnblogs.com/cnblogs_com/kuikui/354173/r_earth.jpg" />
+            </div>
+        </div>
+        <script type="text/javascript">
+            function $(id){return document.getElementById(id);}
+            var content = $("content");
+            var oBox = $("box");
+            var oBoxImg = oBox.getElementsByTagName("img")[0];
+            var oBoxImgW = oBoxImg.clientWidth;
+            var step = 0;
+            var auto;
+            function moving(){
+                auto = setInterval(function(){
+                    step--;
+                    if(oBox.offsetLeft<=-oBoxImgW){
+                        step=0;
+                    }
+                    oBox.style.left=step+"px";
+                },60);
+            }
+            
+            moving();
+            
+            content.onmousemove=function(event){
+                if(!(navigator.appVersion.match(/9./i)=="9.")&&(navigator.appVersion.match(/MSIE/gi)=="MSIE")){
+                    event = event || window.event;
+                    var x = event.offsetX;
+                    var y = event.offsetY;
+                    var tmp =Math.abs(x-150)*Math.abs(x-150)+Math.abs(y-150)*Math.abs(y-150);
+                    if(tmp<150*150){
+                        clearInterval(auto);
+                    }
+                }
+                else{
+                    clearInterval(auto);
+                }
+            }
+            
+            content.onmouseout=function(){
+                moving();
+            }
+        </script>
+<div id="words" style="color:white;margin-top:40px;margin-left:60px;font-size:18px;">鼠标放置地球上将停止转动</div>
+</div></div>
+<div class="Part_Line"></div>
+
+<!--文字-->
+<div id="Part3_2">
+<div id="Part3_2_1">
+<h1>历史</h1>
+<hr style="height:1px;border:none;border-top:1px dashed #66B3FF;" />
+<h2>三大时期</h2>
+<p>地球圈层形成时期</p>
+<p>太古宙、元古宙时期</p>
+<p>显生宙时期</p>
+</div>
+<div class="Part_Line_Vertical"></div>
+<div id="Part3_2_2">
+<h1>地理</h1>
+<hr style="height:1px;border:none;border-top:1px dashed #66B3FF;" />
+<h2>外观</h2>
+<p>不规则椭球体，近似为圆形</p>
+<p>颜色丰富，深蓝色为主</p>
+<p>表面明显地划分为陆地和海洋两大部分</p>
+<hr style="height:1px;border:none;border-top:1px dashed #66B3FF;" />
+<h2>内部结构</h2>
+<p>地核</p>
+<p>地幔</p>
+<p>地壳</p>
+</div>
+<div class="Part_Line_Vertical"></div>
+<div id="Part3_2_3">
+<h1>生命的演化</h1>
+<hr style="height:1px;border:none;border-top:1px dashed #66B3FF;" />
+<p>原核生命的出现</p>
+<p>藻菌生态系统的形成</p>
+<p>真核生物的出现</p>
+<p>动物的出现</p>
+<p>海洋藻类和无脊椎动物时代</p>
+<p>鱼类的出现和发展</p>
+<p>两栖类的出现<p>
+<p>裸子植物和爬行动物</p>
+<p>鸟类的出现和发展</p>
+<p>被子植物和哺乳动物</p>
+<p>从猿到人</p>
+<p>人类发展的过程</p>
+</div>
+</div>
+</div>
+<div class="Part_Line"></div>
+
+<!--百度搜索-->
+<form onsubmit="return baiduWithHttps(this)" action="http://www.baidu.com/baidu" target="_blank" 
+style="background-color:black;width:1240px;padding:5px;">
+    <input name=ie type=hidden value=utf-8> 
+    <input type="text"  onfocus="checkHttps" name="word"  size="30">
+    <input type="submit"value="百度搜索">
+</form>
+<script src="http://s1.bdstatic.com/r/www/cache/global/js/BaiduHttps_20150714_zhanzhang.js"></script>
+<script>
+    function checkHttps () {
+        BaiduHttps.useHttps();    
+    };
+    function baiduWithHttps (formname) {
+        var data = BaiduHttps.useHttps();
+        if (data.s === 0) {
+            return true;
+        }
+        else {
+            formname.action = 'https://www.baidu.com/baidu' + '?ssl_s=1&ssl_c' + data.ssl_code;
+            return true;
+        }
+    };
+</script>
+<div class="Part_Line"></div>
+
+<!--结尾-->
+<div id="Part4">
+中国农业大学网站设计与开发的某小组版权所有  互联网违法和不良信息举报中心:www.12377.cn</br>
+中纪委：12388  公安部：110  工信部：12321  文化部：12318  最高检：12309  扫黄办：12390</br>
+珍爱地球  我们的家园
+</div>
+
+<!--地球循环-->
+ <div id="mhmove" style="overflow:hidden;width:1250px;margin:0 auto 0;">
+    <table width="1250px" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+      <td width="1250px" id="mhmove1">
+	  <table width="1250px" border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td><!--单元格宽度120，图片宽度120-->
+          <td width="120" align="center"> <img src="1.jpg" width="120" height="117" border="0" usemap="#Map"/></td>
+          <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td>
+          <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map"  /></td>
+          <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map"  /></td>    
+		  <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td>
+		  <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td>
+		  <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td>
+		  <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td>
+		  <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td>
+		  <td width="120" align="center"><img src="1.jpg" width="120" height="117" border="0" usemap="#Map" /></td>
+        </tr>        
+      </table>
+	  </td>
+      <td id="mhmove2"></td>
+    </tr>
+  </table>
+   </div>
+
+    <script> 
+    var speed=12;   
+    mhmove2.innerHTML=mhmove1.innerHTML; 
+	/*左右循环*/
+    function Marquee3(){ 
+     if(mhmove2.offsetWidth-mhmove.scrollLeft<=0) 
+      mhmove.scrollLeft-=mhmove1.offsetWidth;
+     else{ 
+      mhmove.scrollLeft++; 
+     } 
+    } 
+	/*上下循环*/
+    /*function Marquee4(){ 
+     if(mhmove2.offsetHeight-mhmove.scrollTop<=0) 
+      mhmove.scrollTop-=mhmove1.offsetHeight; 
+     else{ 
+      mhmove.scrollTop++;
+     } 
+    }*/
+    var MyMar2=setInterval(Marquee3,speed); 
+    mhmove.onmouseover=function() {clearInterval(MyMar2)} 
+    mhmove.onmouseout=function() {MyMar2=setInterval(Marquee3,speed)}
+   </script>
+<!--循环代码结束-->
+
+</body>
+<html>
