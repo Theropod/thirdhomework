@@ -1,0 +1,75 @@
+#Part1{
+	height:120px;
+	width:1250px;
+	font-size:40px;
+	background-color:black;
+}
+
+#Tittle{
+	height:120px;
+	width:1100px;
+	font-size:40px;
+	padding-left:15px;
+	line-height:120px;
+	color:white;
+	float:left;
+}
+
+
+
+#Part2{
+	height:2950px;
+	width:1250px;
+	background-color:black;
+}
+.Demo{
+	width:1250px;
+	height:320px;
+	font-size:18px;
+	color:white;
+	background-color:black;
+}
+
+.Article{
+	width:890px;
+	height:280px;
+	font-size:18px;
+	padding:20px;
+	color:white;
+	background-color:black;
+	float:left;
+}
+
+
+.Part_Line{
+	height:1px;
+	width:1250px;
+	background: -webkit-linear-gradient(left, #004B97,#fff); /*360浏览器*/
+}
+
+h3{
+	font-style:italic;
+}
+
+a:link{
+ font:12px;
+ color: #FFFFFF;
+ text-decoration: none;
+}
+a:visited
+{
+ color:white;
+ text-decoration: none;
+} 
+a:hover{
+ text-decoration: underline;
+}
+a:active{
+ text-decoration: underline;}
+
+
+
+
+
+
+

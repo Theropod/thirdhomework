@@ -1,0 +1,136 @@
+#Part1{/*标题 Our Earth*/
+	height:120px;
+	width:1235px;
+	font-size:50px;
+	line-height:120px;/*文字上下居中*/
+	padding-left:15px;
+	margin:0 auto;/*div居中*/
+	background-image:url(earth2.jpg);
+	color:white;
+}
+
+#Part2{/*小标题区域*/
+	height:35px;
+	width:1250px;
+	margin:0 auto;/*div居中*/
+	background-color:black;
+}
+
+#Part3{/*第三大部分*/
+	height:1006px;
+	width:1250px;
+	margin:0 auto;/*div居中*/
+	background-color:black;	
+}
+
+#Part4{
+	height:64px;
+	width:1250px;
+	background-color:black;
+	color:white;
+	text-align:center;
+	padding-top:6px;
+	margin:0 auto;/*div居中*/
+}
+
+#Part3_1{/*人和旋转的地球的整个区域*/
+	height:500px;
+	width:1250px;
+	background-size:contain;
+	background-repeat:no-repeat;
+	background-image:url(001.jpg);
+}
+
+#Part3_1_1{/*文字*/
+	height:470px;
+	width:300px;
+	color:white;
+	font-size:18px;
+	text-indent: 2em;
+	padding-top:30px;
+	margin-left:560px;
+	float:left;
+}
+
+#Part3_1_2{/*旋转的地球*/
+	height:500px;
+	width:330px;
+	color:white;
+	/*background-image:url(galaxy1.jpg);*/
+	margin-left:920px;
+	/*margin-top:10px;*/
+
+}
+
+#Part3_2{/*第二个背景*/
+	height:505px;
+	width:1250px;
+	background-size:cover;
+	background-color:black;
+	/*background-image:url(earth2.jpg);*/
+}
+
+#Part3_2_1{
+	height:505px;
+	width:396px;
+	background-color:black;
+	color:white;
+	padding-left:20px;
+	float:left;
+}
+
+#Part3_2_2{
+	height:505px;
+	width:396px;
+	background-color:black;
+	color:white;
+	padding-left:20px;
+	float:left;
+}
+
+#Part3_2_3{
+	height:505px;
+	width:396px;
+	background-color:black;
+	color:white;
+	padding-left:20px;
+	float:left;
+}
+
+.Part_Line_Vertical{
+	height:505px;
+	width:1px;
+	background: -webkit-linear-gradient(top, #004B97,#fff); /*360浏览器*/
+	float:left;
+}
+
+.Part_Line{
+	height:1px;
+	width:1250px;
+	background: -webkit-linear-gradient(left, #004B97,#fff); /*360浏览器*/
+	
+	/*background-color:white;*/
+}
+
+.Part2_1:hover{background-color:#DDDDDD;}
+.Part2_1{
+	height:35px;
+	width:250px;
+	font-size:20px;	
+	float:left;
+	text-align:center;/*使文字左右居中*/
+	line-height:35px;/*使文字上下居中*/
+	color:white;
+	cursor:pointer;/*鼠标变成小手*/
+}
+
+.line_m{text-decoration:line-through}
+
+#content{width: 254px; height: 254px; border-radius: 127px; overflow:hidden; position: relative;left:42px;top:20px;}/*overflow:hidden*/
+#box{position: absolute; left:0px; top: 0px;}
+#box img{width:800px; height: 280px;}
+#box .img1{position: absolute; top: 0px; left: 0px;}
+#box .img2{position: absolute;top:0px; left: 800px;}
+
+
+
