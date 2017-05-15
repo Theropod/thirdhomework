@@ -108,7 +108,7 @@
 	height:1px;
 	width:1250px;
 	background: -webkit-linear-gradient(left, #004B97,#fff); /*360浏览器*/
-	
+	margin:0 auto;/*div居中*/
 	/*background-color:white;*/
 }
 
